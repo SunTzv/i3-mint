@@ -109,6 +109,26 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# --- PURPLE THEME ---
+
+set $bg          #0D0A10
+set $surface     #15101A
+set $border      #30233A
+set $inactive    #4A3857
+set $purple      #9273A8
+set $lavender    #B89AC8
+set $text        #D8C9DF
+
+client.focused          $purple  $purple  $text  $purple  $purple
+client.focused_inactive $border  $border  $text  $border  $border
+client.unfocused        $surface $surface $text  $surface  $surface
+client.urgent            $inactive $inactive $text  $inactive $inactive
+
+default_border pixel 2
+
+gaps inner 8
+gaps outer 4
+
 # --- BAR ---
 bar {
         status_command i3status
